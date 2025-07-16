@@ -81,6 +81,15 @@ It uses Hardhat to fork the Ethereum mainnet and impersonate accounts to interac
 
     This command moves time forward a week and sends $200k crvUSD from the largest holder of crvUSD which isn't a contract, at the time of writing they only have $1M crvUSD, so you will get errors if their balance falls below this (4-5 weeks of rewards).
 
+6.  If you just want to play around you can do swaps, deposits, etc.  You can also simulate earning CRV rewards by depositing and gauge to a pool then moving forward in time:
+
+    ```bash
+    npm run advance-time
+    ```
+    
+    This moves forward 1 day.
+
 ## Notes
 
-Each time you restart the network it will reset your account on the forked network, but if your wallet is Rabby it won't know that, and will continue to think transactions have been sent.  So you may need to manually change the nonce of your account back to 0, or whatever the tx count of your address actually is.
+- Each time you restart the network it will reset your account on the forked network, but if your wallet is Rabby it won't know that, and will continue to think transactions have been sent.  So you may need to manually change the nonce of your account back to 0, or whatever the tx count of your address actually is.
+- Hardhat sometimes freezes if your RPC isn't performant enough.  If things aren't working, this could be why.
