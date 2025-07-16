@@ -1,6 +1,8 @@
-# Curve Rewards Simulator
+# Curve UI Simulator
 
-This project simulates the process of dispatching and processing rewards for the Curve DAO. It uses Hardhat to fork the Ethereum mainnet and impersonate accounts to interact with the relevant contracts.
+This project allows a user to simulate interactions with the Curve official UI to see how things work.
+
+It uses Hardhat to fork the Ethereum mainnet and impersonate accounts to interact with the relevant contracts.
 
 ## Project Structure
 
