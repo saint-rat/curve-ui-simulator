@@ -81,7 +81,7 @@ It uses Hardhat to fork the Ethereum mainnet and impersonate accounts to interac
 
     This command moves time forward a week and sends $200k crvUSD from the largest holder of crvUSD which isn't a contract, at the time of writing they only have $1M crvUSD, so you will get errors if their balance falls below this (4-5 weeks of rewards).
 
-6.  If you just want to play around you can do swaps, deposits, etc.  You can also simulate earning CRV rewards by depositing and gauge to a pool then moving forward in time:
+6.  If you just want to play around you can do swaps, deposits, etc.  You can also simulate earning CRV rewards by depositing to a pool and gauge then moving forward in time:
 
     ```bash
     npm run advance-time
