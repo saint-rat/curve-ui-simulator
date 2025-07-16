@@ -1,0 +1,19 @@
+{
+  "name": "curve-ui-simulator",
+  "version": "1.0.0",
+  "description": "A project for simulating Curve UI functionality with a forked Mainnet RPC.",
+  "scripts": {
+    "start-node": "npx hardhat node",
+    "fund-eth": "npx hardhat run scripts/fundEth.js --network localhost",
+    "fund-crv": "npx hardhat run scripts/fundCrv.js --network localhost",
+    "fund-crvusd": "npx hardhat run scripts/fundCrvusd.js --network localhost",
+    "advance-time": "npx hardhat run scripts/advanceTime.js --network localhost",
+    "simulate-scrvusd": "npx hardhat run scripts/scrvusd/simulate.js --network localhost",
+    "simulate-vecrv": "npx hardhat run scripts/vecrv/simulate.js --network localhost"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.25.0"
+  }
+}
